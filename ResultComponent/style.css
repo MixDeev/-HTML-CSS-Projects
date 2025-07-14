@@ -1,0 +1,210 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  font-family:"Hanken Grotesk", sans-serif;
+  font-weight: 500;
+  background-color: #f3f4fd 
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+}
+
+.result{
+  background: linear-gradient(to bottom, #7755ff, #2f2ce9), linear-gradient(to top, #4d21c9, #2521c9);
+  height: 470px;
+  width: 330px;
+  border-radius: 20px;
+  position: relative;
+  right: -20px;
+  flex-shrink: 1;
+  
+}
+
+h1{
+  color: #cac9ff;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+h2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, rgba(60, 45, 165, 0.8), rgba(30, 28, 200, 0));
+  border-radius: 50%;
+  text-align: center;
+  width: 180px;
+  height: 180px;
+  margin: auto;
+  color: white;
+  font-size: 60px;
+}
+
+h2 span{
+  font-size: 15px;
+  font-weight: 400;
+  color: #cac9ff
+}
+
+h3{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+  margin-top: 25px;
+}
+
+
+.result p{
+  color: #cac9ff;
+  text-align: center;
+  width: 55%;
+  margin-left: 75px;
+  margin-top: 20px;
+
+}
+
+.summary{
+  background-color: white;
+  height: 470px;
+  width: 380px;
+  border-radius: 0 20px 20px 0;
+}
+
+.cognition{
+  display: grid;
+  grid-template-columns: 30px 150px 200px;
+  margin-bottom: 10px;
+  width: 75%;
+  padding: 20px;
+  margin-top: 15px;
+  margin-left: 50px ;
+  border-radius: 15px;
+}
+
+div.cognition:nth-of-type(1){
+  background-color: #fff6f6 ;
+  color: #FF5555;
+  font-weight: 500;
+}
+
+div.cognition:nth-of-type(2){
+  background-color: #fffbf4 ;
+  color: #ffb21e;
+  font-weight: 500;
+  
+}
+
+div.cognition:nth-of-type(3){
+  background-color: #f2fcf9 ;
+  color: #00bb8f ;
+  font-weight: 500;
+}
+
+div.cognition:nth-of-type(4){
+  background-color: #f3f4fd ;
+  color: #1125D6;
+  font-weight: 500;
+}
+
+h4{
+  margin-left: 50px;
+  margin-top: 30px;
+  font-size: 20px;
+  color: #303859;
+}
+
+.cognition h5{
+  color: grey;
+  font-weight: bold;
+}
+
+.cognition span{
+  color: black;
+  font-weight: bold;
+}
+
+.summary #button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+button{
+  height: 50px;
+  width: 70%;
+  border-radius: 30px;
+  background-color: #303B59;
+  color: white;
+  font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 700px) {
+   body{
+    height: 100vh;
+   }
+  .container{
+    display: grid;
+  }
+
+  .result{
+    height: 300px;
+    width: 350px;
+  }
+
+  h1{
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+h2{
+  width: 120px;
+  height: 120px;
+  font-size: 50px;
+}
+
+h2 span{
+  font-weight: 400;
+}
+
+h3{
+  font-size: 20px;
+}
+
+.result p{
+  font-size: 15px;
+  width: 70%;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.summary{
+  width: 350px;
+  position: relative;
+  left: 20px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.attribution{
+  margin-top: 30px;
+  margin-left: 20px;
+}
+}
