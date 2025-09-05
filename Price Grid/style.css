@@ -1,0 +1,120 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+   font-family: "Karla", sans-serif;
+   background-color: #e6eff5;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center; 
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 90%;       
+  max-width: 800px; 
+  margin: 0 auto;
+}
+
+.community{
+  grid-column: span 2;
+  background-color: white;
+  height: 280px;
+}
+
+h1{
+  color: #2ab3b1;
+  font-weight: bold;
+  margin: 40px 40px 20px 40px;
+}
+
+h2{
+  color: #c0df33;
+  margin: 0px 40px; 
+}
+
+.community p{
+  color: #9aa7be;
+  font-size: 18px;
+  margin: 10px 40px; 
+  line-height: 165%;
+}
+
+#skills{
+  margin-top: -10px;
+}
+
+.card{
+  height: 350px;
+  color: white;
+}
+
+h3{
+  margin: 40px 40px 20px 50px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.card h4, .card p, .card ul{
+margin: 20px 50px;
+}
+
+h4{
+ font-size: 32px;
+}
+
+span{
+  font-size: 18px;
+  color: #e6eff5;
+  font-weight: 100;
+}
+
+#subscription{
+  background-color: #2ab3b1;
+}
+
+#subscription p{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#info{
+  background-color: #4abfbd;
+}
+
+ button{
+  width: 60%;
+  height: 48px;
+  margin: 20px 50px;
+  color: white;
+  background-color: #c0df33;
+  border: none;
+  font-size: 18px;
+  border-radius: 5px;
+   box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+
+ li{
+  list-style-type:none;
+  color: #e6eff5;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 5px;  
+}
+
+ .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    @media (max-width: 767px) {
+
+ .container{
+  display: flex;
+  flex-direction: column;
+ }
+}
