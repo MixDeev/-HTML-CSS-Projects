@@ -10,7 +10,7 @@ html{
 
 body{
   font-family: "IBM Plex Sans", sans-serif;
-  background-image: url(./assets/bg-main-desktop.png);
+  background-image: url(./images/bg-main-desktop.png);
   background-repeat:no-repeat;
   background-size: 110%;
   background-position: 100% 15%;
