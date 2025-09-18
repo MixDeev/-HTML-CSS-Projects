@@ -1,0 +1,322 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 16px;
+}
+
+body{
+ font-family: "Open Sans", sans-serif;
+ overflow-x: hidden;
+}
+
+header{
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+.header-main{
+  background-image: url(images/bg-hero-desktop.svg);
+  background-repeat: no-repeat;
+  background-size:auto;
+  background-color: #EDFBFF;
+}
+
+.header-main button{
+  width: 200px;
+  height: 49px;
+  color:#00252E;
+  background-color: white;
+  font-weight: bold;
+  border: 10px solid white;
+  border-radius: 20px;
+  font-size: 0.88rem;
+  box-shadow: 5px 5px 5px rgb(205, 205, 213);
+ 
+}
+
+a{
+ text-decoration: none;
+}
+
+.header-main button:hover{
+  background-color: FFFFFF;
+  cursor: pointer;
+}
+
+section{
+  display: flex;
+  padding: 25px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.huddle-info{
+  align-self: center;
+  max-width: 100%;
+}
+
+.huddle-info h1{
+  line-height: 60px;
+  font-size: 2.5rem;
+  max-width: 535px;
+  margin-bottom: 20px;
+}
+
+.huddle-info p{
+  max-width: 520px;
+  font-size: 1.13rem;
+  line-height: 27px;
+  margin-bottom: 30px;
+}
+
+.huddle-info button{
+  background-color: #FF52C1;
+  box-shadow: 5px 5px 5px rgb(180, 73, 148);
+  border: #FF52C1;
+  color: white;
+}
+
+.huddle-info button:hover{
+   background-color: #FF9ADB;
+}
+
+#mockups img{
+  max-width: 642px;
+  width: 100%;
+}
+
+.huddle-image{
+  max-width: 417.96px;
+}
+
+.community-wrapper{
+  padding: 20px;
+  margin-bottom: 150px;
+}
+
+.huddle-discussions , .huddle-conversations , .huddle-integration{
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 0px 10px 5px rgb(239, 234, 234);
+  border-radius: 10px;
+  max-width: 1232px;
+  margin: 100px auto;
+  padding: 30px;
+  gap: 10px;
+}
+
+h2{
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 42px;
+}
+
+.grow-together p , .conversations p , .integration p{
+   font-size: 1.13rem;
+   color: #808E9A;
+   font-weight: 100;
+   line-height: 27px;
+   max-width: 488px;
+}
+
+.community-build{
+  padding: 30px;
+  position: absolute;
+  left: 50%;
+  bottom: 70%;
+  transform: translate(-50%);
+  background-color: white;
+  max-width: 800px;
+  height:220px;
+  box-shadow: 0px 0px 2px 2px rgb(239, 234, 234);
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+h3{
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-weight: 600;
+}
+
+footer button{
+  background-color: #FF52C1;
+  box-shadow: 5px 5px 5px rgb(180, 73, 148);
+  border: #FF52C1;
+  color: white;
+  width: 240px;
+  height: 49px;
+  font-weight: bold;
+  border-radius: 20px;
+  font-size: 0.88rem;
+}
+
+footer button:hover{
+  background-color: #FF9ADB;
+}
+
+.community-build a {
+display: flex;
+justify-content: center;
+margin-top: 30px;
+}
+
+
+footer{
+  position: relative;
+  background-color: #00252E;
+  height: 418px;
+  max-width: 100%;
+}
+
+.contact{
+  display: flex;
+  justify-content: space-between;
+  padding: 100px;
+  align-items:stretch;
+  gap: 25px;
+  color: white;
+  font-size: 0.88rem;
+  line-height: 27px;
+  font-weight: 100;
+}
+
+.contact .contact-info, .contact nav, .contact .media-links{
+  flex: 1;
+}
+
+ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+li{
+  list-style: none;
+}
+
+.contact-info p , li , .media-links{
+  margin-bottom: 5px;
+}
+
+ul , .media-links{
+  margin-top: 40px;
+}
+
+#huddle-img{
+  margin-bottom: 10px;
+}
+
+.copyright{
+ margin-top: 40px;
+}
+
+p img{
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+
+
+@media (min-width:365px) and (max-width:765px) {
+#huddle-img{
+  width: 104px;
+}
+
+.header-main header button{
+  color: #808E9A;
+}
+
+.header-main button{
+  width: 96px;
+  
+}
+
+.huddle-info button{
+  width: 200px;
+}
+.header-main{
+  background-image: url(images/bg-hero-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+section{
+  display: flex;
+ flex-direction: column;
+}
+
+.huddle-info a {
+display: flex;
+justify-content: center;
+margin-top: 30px;
+}
+
+.huddle-discussions , .huddle-conversations , .huddle-integration{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+ h2{
+  font-size: 1.25rem;
+  text-align: center;
+ }
+
+ .community-build {
+  width: 400px;
+  height: 175px;
+  top: -150px;
+ }
+
+ h3{
+  font-size: 1.13rem;
+ }
+
+ .contact{
+  display: flex;
+  flex-direction: column;
+  margin-left: -70px;
+ }
+
+  .media-links{
+  align-self: center;
+  margin-left: 150px;
+}
+
+.media-links p{
+  margin-left: -70px;
+}
+
+
+
+ footer{
+  height: 85vh;
+ }
+
+ p img{
+  margin-right: 20px;
+ }
+
+ #paragramphp{
+  display: flex;
+  align-items: center ;
+ }
+
+  ul{
+  display: flex;
+  flex-direction: column;
+ }
+}
+
+
