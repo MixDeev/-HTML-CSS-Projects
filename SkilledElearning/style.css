@@ -1,0 +1,268 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+html{
+  font-size: 16px;
+}
+body{
+  font-family: "Plus Jakarta Sans", sans-serif;
+  padding: 20px;
+  height: 100%;
+  background: linear-gradient(to top, #F0F1FF 0%, #FFFFFF 100%);
+  overflow-x: hidden;  
+}
+
+.container{
+  width: 90%;
+  padding:20px;
+  margin:  auto;
+ 
+}
+
+h1{
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
+h2{ 
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 120%;
+}
+
+h3{
+  color: #F02AA6;
+}
+
+.courses{
+  font-size: 2rem;
+}
+
+.description{
+  font-size: 1.13rem;
+  color: grey;
+  line-height: 150%;
+  font-weight: 500;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+button{
+  width: 168px;
+  height: 59px;
+  border-radius: 25px;
+  color: white;
+  border: none;
+  background-color: #13183F;
+  font-size: 1.13rem;
+  line-height: 150%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+header button{
+  margin-right: 60px;
+}
+
+header  button:hover{
+  background: #666CA3;
+}
+
+.budget button{
+  background: linear-gradient(to top, #F02AA6, #FF6F48);
+}
+
+.budget button:hover{
+  background: #FFA7C3;
+}
+
+
+
+main{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 688px;
+  width: 100%;
+  margin-bottom: 250px;
+}
+
+.budget{
+  height: 339px;
+  width: 544px;
+  margin-top: 10rem;
+}
+
+.budget .description{
+  margin-bottom: 20px;
+}
+
+.hero{
+  height: 560px;
+  width: 544px;
+}
+
+.hero img{
+  position: relative;
+  bottom: 45%;
+}
+
+section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 25px;
+  row-gap: 40px;
+  margin-bottom: 40px;
+}
+
+.cards{
+  background-color: white;
+  border-radius: 15px;
+}
+
+.cards img{
+  position: relative;
+  left: 25px;
+  bottom: 30px;
+}
+
+h2 , .cards .description , h3{
+  padding: 30px;
+}
+
+.cards .description{
+  height: 115px;
+}
+
+.card1{
+  background: linear-gradient(to top, #F02AA6, #FF6F48);
+}
+
+.card1 .courses{
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  padding: 30px;
+  margin: 30px;
+}
+
+.hero-tablet , .hero-mobile{
+  display: none;
+}
+
+footer{
+  background-color: #13183F;
+   height: 107px;
+   width: 100vw;
+   padding: 0;
+   margin: -20px;
+}
+
+.footer-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  margin-left: 40px;
+}
+
+footer button{
+  margin-right: 80px;
+}
+
+footer button{
+  background: linear-gradient(to top, #4851FF, #F02AA6);   
+  border: none;  
+}
+
+footer button:hover{
+  background: linear-gradient(
+  to bottom,       
+  #d4cfcf 20%,
+  #4851FF 100%,    
+  #F02AA6 80%
+);
+}
+
+@media screen and  (min-width: 327px )  and (max-width: 766px){
+  .hero-desk{
+    display: none;
+  }
+
+ h1{
+  font-size: 2.5rem;
+ }
+
+ .budget{
+  width:100%
+ }
+
+.budget .description{
+  width: 70%;
+}
+header img , footer img{
+    width: 79.29px;
+    height: 20px;
+  }
+  
+ .hero-mobile{
+  display: flex;
+ }
+
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+
+    section{
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  h1{
+    font-size: 2.5rem;
+  }
+
+  .card1 .courses{
+    font-size: 1.5rem;
+  }
+  
+  header img , footer img{
+    width: 79.29px;
+    height: 20px;
+  }
+
+  button{
+   width: 152px;
+   height: 48px;
+  }
+
+  .hero-desk{
+    display: none;
+  }
+
+  .hero-tablet{
+  display: flex;
+  position: relative;
+  top: -25%;
+  left:15%;
+  }
+
+  section{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+  }
+}
